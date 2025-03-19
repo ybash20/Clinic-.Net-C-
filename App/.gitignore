@@ -1,0 +1,61 @@
+# ملف .gitignore لتطبيق سطح مكتب C# .NET
+
+### [1] ملفات البناء (Build) والمخرجات ###
+/bin/
+/obj/
+*.exe
+*.dll
+*.pdb
+*.cache
+*.config
+*.xml
+
+### [2] ملفات إعدادات Visual Studio ###
+/.vs/
+/*.suo
+/*.user
+/*.userosscache
+
+### [3] حزم NuGet والمُعتمِدَات ###
+/packages/
+/*.nupkg
+*.nuspec
+
+### [4] ملفات IDE أخرى (Rider, VS Code, إلخ) ###
+.idea/
+.vscode/
+*.swp
+*.swo
+
+### [5] ملفات النظام ###
+.DS_Store
+Thumbs.db
+
+### [6] ملفات الاختبارات ###
+TestResults/
+*.coverage
+*.log
+
+### [7] ملفات خاصة بالبيئة ###
+.env
+*.secrets
+*.user.secrets
+
+### [8] ملفات قاعدة البيانات (إذا كان التطبيق يستخدم قاعدة بيانات) ###
+*.mdf
+*.ldf
+*.sdf
+*.db
+*.sqlite
+
+### [9] ملفات التكوين (Configuration Files) ###
+/appsettings.json
+/appsettings.Development.json
+
+### [10] ملفات خاصة بـ WinForms أو WPF ###
+*.resx
+*.resources
+*.settings
+
+### [11] ملفات Entity Framework Core (إذا كان مستخدمًا) ###
+/Migrations/
